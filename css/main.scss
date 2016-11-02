@@ -9,6 +9,7 @@ html{
 }
 body{
     font-size: 16px;
+    overflow: hidden;
 }
 $w-list:320px,360px,375px,412px,414px;
 $design-width:750px;
@@ -58,7 +59,7 @@ $design-width:750px;
   }
   .diandian{
       position: relative;
-      margin-left: 1.25rem;
+      margin-left: 1.8rem;
   }
 }
 #add{
@@ -179,7 +180,7 @@ $design-width:750px;
     #qc {
         position: absolute;
         top: 0.2rem;
-        left:-0.4rem;
+        left:-1rem;
         background: #0288D1;
         width: 2rem;
         height: 0rem;
@@ -192,10 +193,14 @@ $design-width:750px;
         text-align: center;
         height: 0.8rem;
         float: left;
-        line-height: 1rem;
+        line-height: 0.8rem;
+        }
+        .qwer:hover{
+            background: #FFFFFF;
+            color: #000000;
         }
    }
 #qc:hover{
-    height: 2.5rem;
+    height: 2.4rem;
     opacity: 1;
 }

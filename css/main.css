@@ -9,7 +9,8 @@ html {
   font-size: 100px; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  overflow: hidden; }
 
 @media screen and (min-width: 320px) {
   html {
@@ -71,7 +72,7 @@ body {
     margin-left: 0.5rem; }
   #header .diandian {
     position: relative;
-    margin-left: 1.25rem; }
+    margin-left: 1.8rem; }
 
 #add {
   text-align: center;
@@ -170,7 +171,7 @@ ul li .content .black {
 #qc {
   position: absolute;
   top: 0.2rem;
-  left: -0.4rem;
+  left: -1rem;
   background: #0288D1;
   width: 2rem;
   height: 0rem;
@@ -183,8 +184,11 @@ ul li .content .black {
     text-align: center;
     height: 0.8rem;
     float: left;
-    line-height: 1rem; }
+    line-height: 0.8rem; }
+  #qc .qwer:hover {
+    background: #FFFFFF;
+    color: #000000; }
 
 #qc:hover {
-  height: 2.5rem;
+  height: 2.4rem;
   opacity: 1; }

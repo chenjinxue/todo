@@ -53,6 +53,19 @@ $(function(){
 			localStorage.todos=JSON.stringify(arr);
 		}
 	})
+	
+	$("#qc div").on("touchend",function(){
+ 	ul.find("li").show();
+ 	if($(this).attr("data-role")=="completed"){
+ 		ul.find("li:not('.done')").hide();
+ 	}
+    if($(this).attr("data-role")=="remind"){
+ 		ul.find("li.done").hide();
+ 	}
+})
+	
+	
+	
 })
 	
 	

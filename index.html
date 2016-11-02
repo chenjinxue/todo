@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width">
+	
+		 <!-- Add to homescreen for Safari on Ios -->
+	  <meta name="apple-mobile-web-app-capable" content="yes">
+	  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	  <meta name="apple-mobile-web-app-title" content="css3">
+	  <link rel="apple-touch-icon" href="icon.png">
+	
+	  <!-- Add to homescreen for Chrome on Android -->
+	  <meta name="mobile-web-app-capable" content="yes">
+	  <meta name="application-name" content="css3">
+	  <meta name="theme-color" content="#2F3BA2">
+	  <link rel="icon" sizes="192x192" href="logo.png">
+
+</head>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<body>
+<div id="header">
+		<span class="mianbao iconfont">&#xe614;</span>
+		<span class="todo">To Do</span>
+		<span class="jiantou iconfont">&#xe605;</span>
+		<span class="diandian iconfont">&#xe663;
+		  <div id="qc">
+		  	<div id="all" data-role="all" class=" qwer">所有</div>
+			<div id="remind" data-role="remind" class="qwer">未完成</div>
+			<div id="completed" data-role="completed" class="qwer">已完成</div>
+		  </div>
+		</span>
+</div>
+	<div class="inputarea">
+		<input type="text" name="input" id="input" value="待办事项" />
+	</div>
+	
+	
+		<div id="add">
+			+
+		</div>
+
+	
+	<ul id="ul">
+		
+		
+	</ul>
+
+
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>

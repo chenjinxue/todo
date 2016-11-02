@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑",helvetica;
+}
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 16px;
+}
+$w-list:320px,360px,375px,412px,414px;
+$design-width:750px;
+@each $w in $w-list{
+    @media screen and (min-width:#{$w}){
+        html{
+            font-size: 100px * $w/$design-width;
+        }
+    }
+}
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1478000615317'); /* IE9*/
+  src: url('iconfont.eot?t=1478000615317#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1478000615317') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1478000615317') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1478000615317#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:0.6rem;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-naviconround:before { content: "\e614"; }
+
+.icon-icon:before { content: "\e605"; }
+
+.icon-mianbaoxiedaohangxiaokuai:before { content: "\e7bd"; }
+
+.icon-diandiandian:before { content: "\e663"; }
+
+#header{
+    width: 100%;
+    height: 1rem;
+    background: #02A9F5;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.6rem;
+    color: #FFFFFF;
+  span{
+      float: left;
+      margin-left: 0.5rem;
+  }
+  .diandian{
+      position: relative;
+      margin-left: 1.25rem;
+  }
+}
+#add{
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+    background: #FD4082;
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.2rem;
+    color: #ffffff;
+    font-size: 0.5rem;
+    line-height: 1rem;
+    padding: 0;
+    border-radius: 50%;
+}
+@keyframes no{
+    0%{
+        height: 1.2rem;
+    }
+    100%{
+        height: 0;
+        opacity: 0;
+    }
+}
+.no{
+    animation: no 0.5s linear forwards;
+}
+#ul{
+    li{position: relative;
+    list-style: none;
+     .btn{
+            width: 0.5rem;
+            height: 0.5rem;
+            position: absolute;
+            top: 0.4rem;
+            left: 0.4rem;
+            border-radius: 0.1rem;
+            border: 0.1rem solid #000000;
+            float: left;
+           
+    }
+    .btndone{
+        animation: black 0.3s linear forwards;;
+    }
+    .done .content{
+    text-decoration: line-through;
+    color:#e4e4e4;
+}
+    .content{
+        width: 100%;
+        height: 1.2rem;
+        padding:0 0.3rem  0 1rem;
+        margin-top: 0.2rem;
+        line-height: 1.2rem;
+        .gezi{
+            width: 0.5rem;
+            height: 0.5rem;
+            position: absolute;
+            top: 0.4rem;
+            left: 0.4rem;
+            border-radius: 0.1rem;
+            border: 0.1rem solid #000000;
+            float: left;
+           
+        }
+        .black{
+            animation: black 0.3s linear forwards;
+        }
+        @keyframes black{
+            from{
+                border: 0.1rem solid #000000;
+            }
+            to{
+                 border: 0.26rem solid #000000;
+            }
+        
+        }
+    }
+
+        
+    }
+}
+
+.inputarea{
+    margin: auto;
+    background: red;
+    background: #FFFFFF;
+    padding: 0 0.5rem 0 0.5rem;
+    #input{
+        margin: auto;
+        width: 100%;
+        outline: none;
+        border:0;
+        border-bottom: 1px solid #666666;
+        height: 1rem;
+    }
+}
+
+.active{
+    animation: active 0.5s linear forwards;
+}
+
+@keyframes active {
+  0% {
+    height: 1.2rem; }
+  100% {
+    height: 0;
+    opacity: 0; }
+   }
+  ul .ani-delete {
+    animation: active .8s ease  1; 
+    }
+  ul li .content .black {
+    animation: black 0.3s linear forwards;
+     }
+     
+    #qc {
+        position: absolute;
+        top: 0.2rem;
+        left:-0.4rem;
+        background: #0288D1;
+        width: 2rem;
+        height: 0rem;
+        transition: all 0.2s linear;
+        opacity: 0;
+        box-shadow: 0.01rem 0.1rem 0.5rem rgba(0,0,0,0.3);
+    .qwer {
+        width:2rem;
+        font-size: 0.3rem;
+        text-align: center;
+        height: 0.8rem;
+        float: left;
+        line-height: 1rem;
+        }
+   }
+#qc:hover{
+    height: 2.5rem;
+    opacity: 1;
+}
